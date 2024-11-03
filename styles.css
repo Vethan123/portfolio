@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    background-image: url("/portfolio/about/tr.jpg");
+}
+
 body {
     background-color: rgb(2, 2, 50);
     color: whitesmoke;
