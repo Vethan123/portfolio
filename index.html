@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vethan - Devoloper Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+    />
+
+    <div id="bg">
+        <canvas></canvas>
+        <canvas></canvas>
+        <canvas></canvas>
+      </div>
+
+    <link rel = "stylesheet" href = "styles.css"/>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="left"><b>My Portfolio</b></div>
+        <div class="right">
+            <ul>
+                <!-- <li><a href = "/">Home</a></li> -->
+                <li><a href = "./about/index.html">About</a></li>
+                <li><a href = "/">Projects</a></li>
+                <li><a href = "/">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hii, My name is <span class = "purple"><B>Vethan</B></span>
+                <div>I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn" onclick="toGitHub()">Visit GitHub</button>
+                    <script>
+                        function toGitHub(){
+                            window.open("https://github.com/Vethan123", "_blank");
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="ss.png" alt="">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+        strings: ['<b>Web Devoloper</b>', '<b/>&amp; Data Engineer'],
+        typeSpeed: 50,
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src = "canva.js"></script>
+</body>
+</html>
