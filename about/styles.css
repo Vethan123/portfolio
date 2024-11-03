@@ -79,10 +79,14 @@ img {
     border: 6px solid white;
 }
 
-.element{
-    font-size: 35px;
-    font-family: "poppins", sans-serif;
+.element1{
+    display: block;     
+    width: 100%;        
+    margin-bottom: 10px;
+    font-size: 16px;    
+    color: #333;
 }
+
 
 body,
 canvas {
