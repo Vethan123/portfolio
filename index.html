@@ -26,9 +26,9 @@
         <div class="right">
             <ul>
                 <!-- <li><a href = "/">Home</a></li> -->
-                <li><a href = "./about/index.html">About</a></li>
-                <li><a href = "/">Projects</a></li>
-                <li><a href = "/">Contact Me</a></li>
+                <li><a href = "./about/index.html" target = "_blank">About</a></li>
+                <li><a href = "./projects/index.html" target = "_blank">Projects</a></li>
+                <li><a href = "./contact/index.html" target = "_blank">Contact Me</a></li>
             </ul>
         </div>
     </nav>
@@ -40,9 +40,12 @@
                 <div>I am a passionate</div>
                 <span id="element"></span>
                 <div class="buttons">
-                    <button class="btn">Download Resume</button>
+                    <button class="btn" onclick = "viewResume()">View Resume</button>
                     <button class="btn" onclick="toGitHub()">Visit GitHub</button>
                     <script>
+                        function viewResume(){
+                            window.open("https://drive.google.com/file/d/1j42vyKFXqAQvQLSr0re2_sa6i8idUUWa/view?usp=drive_link", "_blank");
+                        }
                         function toGitHub(){
                             window.open("https://github.com/Vethan123", "_blank");
                         }
