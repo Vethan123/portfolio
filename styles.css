@@ -18,7 +18,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 100px;
-    background: linear-gradient(to right, rgb(33, 67, 168), rgb(7, 7, 66));
+    background: linear-gradient(to right, rgb(33, 67, 168, 0.1), rgb(7, 7, 66, 0.1));
     z-index: 1000;
     padding: 0 20px;
 }
@@ -45,8 +45,8 @@ nav ul li {
 }
 
 nav ul li:hover {
-    border-color: rgb(200, 120, 120);
-    transform: translateY(-2px);
+    border-color: rgb(47, 240, 108);
+    transform: translateY(-5px);
 }
 
 nav ul li a {
@@ -59,7 +59,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: rgb(200, 120, 120);
+    color: rgb(66, 225, 34);
     transform: scale(1.1);
 }
 .left{

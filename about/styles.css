@@ -5,7 +5,8 @@
 
 
 nav {
-    background-color: rgb(11, 11, 75);
+    padding: 10px;
+    background-color: rgb(11, 11, 75, 0.1);
     color: white;
     display: flex;
     align-items: center;
