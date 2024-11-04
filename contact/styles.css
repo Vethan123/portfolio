@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+nav {
+    padding: 10px;
+    background-color: rgba(102, 190, 9, 0); 
+    color: white;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    position: absolute;
+    height: 40px;
+}
+
+.back-button {
+    position: absolute;
+    left: 20px;
+    background-color: rgb(32, 125, 196);
+    color: rgb(251, 251, 254);
+    border: rgb(43, 157, 214);
+    padding: 5px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    font-size: 20px;
+}
+
+.back-button:hover {
+    background-color: red;
+    color: white;
+    transform: translateY(-2px);
+}
+
+body{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
