@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projects</title>
+    <link rel = "stylesheet" href="styles.css">
+    
+
 </head>
 <body>
-    <h1>projects</h1>
+<canvas id="test"></canvas>
+<nav>
+    <button onclick="history.back()" class="back-button"><span class="left-arrow">&lArr;</span> Back</button>
+    <span class="nav-heading">PROJECTS</span>
+</nav>
+<div class="container">
+    <section class="projects-section" id="projects">
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="./images/p1.png" alt="Project 1" class = "p1">
+                <h3>R.D.P.O.D insights</h3>
+                <p>The RDPOD project combines distance-based and density-based clustering techniques with large language models (LLMs) for improved outlier detection. It provides a powerful framework for anomaly detection in complex datasets. RDPOD aims to strengthen data integrity and decision-making across diverse applications.</p>
+                <button class="view-btn" onclick="window.open('https://github.com/Vethan123/mlproject', '_blank')">View on GitHub</button>
+
+            </div>
+            <div class="project-card">
+                <img src="./images/p2.webp" alt="Project 3">
+                <h3>Drowse Defender</h3>
+                <p>Created a drowsiness detection system to enhance driver safety through computer vision, using a 4-layer CNN with convolutional, ReLU, pooling, and fully connected layers. Integrated analysis of eye movements and yawning to identify drowsiness. Triggered alerts if eyes stayed closed for 7 consecutive frames, ensuring timely intervention.</p>
+                <button class="view-btn" onclick="window.open('https://github.com/Vethan123/drowsiness-detection/tree/main', '_blank')">View on GitHub</button>
+            </div>
+            <div class="project-card">
+                <img src="./images/p3.png" alt="Project 2" class="p3">
+                <h3>VisualSense-QA</h3>
+                <p>Developed an end-to-end Visual Question Answering (VQA) web application utilizing advanced AI techniques, including the Vision-and-Language Transformer (ViLT) for image understanding and natural language processing. Addressed challenges in large language models (LLMs) related to interpretability.</p>
+                <button class="view-btn1" onclick="window.open('https://github.com/Vethan123/VisualSense-QA', '_blank')">View on GitHub</button>
+                <button class="view-btn1" onclick="window.open('https://huggingface.co/spaces/Parimala13Sri/Visual_Question_Answering', '_blank')">Deployed Link</button>
+            </div>
+        </div>
+    </section>
+</div>
+<script src = "script.js"></script>
 </body>
 </html>
