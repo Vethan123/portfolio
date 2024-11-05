@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vethan - Devoloper Portfolio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Pixel Perfect Portfolio</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,60 +23,289 @@
     rel="stylesheet"
     />
 
-    <div id="bg">
-        <canvas></canvas>
-        <canvas></canvas>
-        <canvas></canvas>
-    </div>
+    <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" sizes="16x16" href="assets/img/favicon.ico">
+    <link rel="manifest" href="assets/img/manifest.json">
+    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
 
-    <link rel = "stylesheet" href = "styles.css"/>
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Font Awesome core CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
 </head>
 <body>
-    <header>
-    <nav>
-        <div class="left"><b>My Portfolio</b></div>
-        <div class="right">
-            <ul>
-                <!-- <li><a href = "/">Home</a></li> -->
-                <li><a href = "./about/index.html">About</a></li>
-                <li><a href = "./projects/index.html">Projects</a></li>
-                <li><a href = "./contact/index.html">Contact Me</a></li>
-            </ul>
-        </div>
-    </nav>
-    </header>
-    <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                Hii, My name is <span class = "purple"><B>Vethan</B></span>
-                <div>I am a passionate</div>
-                <span id="element"></span>
-                <div class="buttons">
-                    <button class="btn" onclick = "viewResume()">View Resume</button>
-                    <button class="btn" onclick="toGitHub()">Visit GitHub</button>
-                    <script>
-                        function viewResume(){
-                            window.open("https://drive.google.com/file/d/1j42vyKFXqAQvQLSr0re2_sa6i8idUUWa/view?usp=drive_link", "_blank");
-                        }
-                        function toGitHub(){
-                            window.open("https://github.com/Vethan123", "_blank");
-                        }
-                    </script>
+
+    <!-- Hero Section, Background Image change in css -->
+    <div id="top" class="hero background-overlay">
+    
+        <!-- Name & Description -->
+        <div class="hero-content">
+            <h1>I am Vethan</h1>
+            <p class="hero-job"><span>I'M A CREATIVE WEB DEVELOPER & DATA SCIENCE ENTHUSIAST</span></p>
+            <p class="hero-job-desc">I STAND ON A SWEET SPOT WHERE DESIGN &amp; CODE INTERSECTS. </p>
+
+        </div><!-- /.hero-content -->
+
+        <div class="hero-arrow page-scroll home-arrow-down">
+            <a class="" href="#intro"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+        </div><!-- /.hero-arrow -->
+
+    </div><!-- /.hero -->
+    <!-- End Hero -->
+
+    <!-- Header -->
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation" data-spy="affix">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <!-- Name -->
+                    <div class="page-scroll site-logo">
+                        <a href="#top">My Portfolio</a>
+                    </div>
+
+                </div><!-- /.navbar-header -->
+
+                <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
+
+                    <!-- Navigation -->
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="page-scroll"><a href="#about">About</a></li>
+                        <li class="page-scroll"><a href="#works">Projects</a></li>
+                        <li class="page-scroll"><a href="#contact">Contact</a></li>
+                        
+                    </ul><!-- /.navbar-nav -->
+
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav><!-- /.primary-navigation -->
+    </header><!-- /#header -->
+    <!-- End Header -->
+
+    <!-- Main content -->
+    <main id="main" class="site-main">
+
+        <!-- Hello section -->
+		<section class="site-section section-hello" id="intro">
+			<div class="container">
+				<h2>HELLO &amp; WELCOME</h2>
+				<p class="section-subtitle"><span>EXPLORE HERE</span></p>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="main-service text-right">
+							<div class="rectangle">
+								<i class="fa fa-calendar" aria-hidden="true"></i>
+							</div><!-- /.rectangle -->
+							<h3>Eager to Learn and Grow</h3>
+							<p>I’m always sharpening my tools to stay ahead of the curve</p>
+						</div><!-- /.main-service -->
+                        <div class="main-service text-right">
+                            <div class="rectangle">
+                                <i class="fa fa-comments" aria-hidden="true"></i>
+                            </div>
+                            <h3>Collaborative and Open to Feedback</h3>
+                            <p>I believe two heads are better than one and am always ready to take a leaf from others' books.</p>
+                        </div><!-- /.main-service -->
+					</div>
+					<div class="col-sm-4">
+						<div class="big-rectangle">
+							<img src="./mine.jpg" alt="" class = "imgsss">
+						</div><!-- /.big-rectangle -->
+					</div>
+					<div class="col-sm-4">
+                        <div class="main-service text-left">
+                            <div class="rectangle">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                            <h3>Detail-Oriented and Quality-Focused</h3>
+                            <p>I leave no stone unturned to make my work speak for itself.</p>
+                        </div><!-- /.main-service -->
+						<div class="main-service text-left">
+							<div class="rectangle">
+								<i class="fa fa-list" aria-hidden="true"></i>
+							</div><!-- /.rectangle -->
+							<h3>Driven by Curiosity and Innovation</h3>
+							<p>I’m always pushing boundaries, letting curiosity lead me to innovative ideas and creative problem-solving solutions.</p>
+						</div><!-- /.main-service -->
+					</div>
+				</div>
+			</div>
+		</section><!-- /.section-hello -->
+        <!-- End Hello section -->
+        <hr>
+        <!-- Quote section -->
+		<section class="section-background section-quote background-overlay text-center">
+			<div class="container">
+				<p>The only way to do <span>great work</span> is to <span>love</span> what you do.</p>
+			</div>
+		</section><!-- /.section-quote -->
+        <!-- End Quote section -->
+        <hr>
+        <!-- About section -->
+        <section class="site-section section-about text-center" id="about">
+            <div class="container">
+                <h2 id = "h22"><b>ABOUT ME</b></h2>
+                <span id = "element1"></span>
+            </div>
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+                var typed = new Typed('#element1', {
+                    strings: [
+                        "I’m Vethan 🎓, a Computer Science UnderGraduate at Gayatri Vidya Parishad College of Engineering 🏫, Passionate about 💡 Machine Learning 🤖, 🌌 Deep Learning, and 🔍 Data Analysis 📊.I'm Skilled in 📚 SQL 🗃️ and interested in web development 🌐.I create dynamic web applications 💻✨ that enhance user experiences 😊.Always eager to learn 📖 and adapt in this evolving tech landscape 🌍.Let’s explore the amazing possibilities in technology together! 🤝"
+                    ],
+                    typeSpeed: 50,
+                    backSpeed: 1,
+                    showCursor: false,
+                    loop: true,
+                });
+            </script>
+            
+        </section><!-- /.section-about -->
+        <!-- End About section -->
+        <hr>
+        <!-- Skills section -->
+        <section class="site-section section-skills">
+            <div class="container">
+                <div class="row">
+                        <h2 id = "sk">MY SKILLS LEVEL</h2>
+                        <div class="progress-group">
+                            <p>Data Structures and Algorithms</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="80">
+                                </div>
+                            </div><!-- /.progress -->
+                        </div><!-- /.progress-group -->
+
+                        <div class="progress-group">
+                            <p>Structured Query Language</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="90">
+                                </div>
+                            </div><!-- /.progress -->
+                        </div><!-- /.progress-group -->
+
+                        <div class="progress-group">
+                            <p>Machine Learning</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="95">
+                                </div>
+                            </div><!-- /.progress -->
+                        </div><!-- /.progress-group -->
+
+                        <div class="progress-group">
+                            <p>Data Analytics</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="87">
+                                </div>
+                            </div><!-- /.progress -->
+                        </div><!-- /.progress-group -->
+
+                        <div class="progress-group">
+                            <p>Web Devolopment</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="70">
+                                </div>
+                            </div><!-- /.progress -->
+                        </div><!-- /.progress-group -->
+                    </div>
+            </div>
+        </section><!-- /.section-skills -->
+        <!-- End Skills section -->
+
+        <hr>
+        <!-- Portfolio/Works section --> 
+        <section class="site-section section-works" id="works">
+            <h2 id = "h12"><b>RECENT WORKS</b></h2>
+            <div class="container">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="./images/p1.png" alt="Project 1" class = "p1">
+                        <h3>R.D.P.O.D insights</h3>
+                        <p>The RDPOD project combines distance-based and density-based clustering techniques with large language models (LLMs) for improved outlier detection. It provides a powerful framework for anomaly detection in complex datasets. RDPOD aims to strengthen data integrity and decision-making across diverse applications.</p>
+                        <button class="view-btn" onclick="window.open('https://github.com/Vethan123/mlproject', '_blank')">View on GitHub</button>
+        
+                    </div>
+                    <div class="project-card">
+                        <img src="./images/p2.webp" alt="Project 3">
+                        <h3>Drowse Defender</h3>
+                        <p>Created a drowsiness detection system to enhance driver safety through computer vision, using a 4-layer CNN with convolutional, ReLU, pooling, and fully connected layers. Integrated analysis of eye movements and yawning to identify drowsiness. Triggered alerts if eyes stayed closed for 7 consecutive frames, ensuring timely intervention.</p>
+                        <button class="view-btn" onclick="window.open('https://github.com/Vethan123/drowsiness-detection/tree/main', '_blank')">View on GitHub</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="./images/p3.png" alt="Project 2" class="p3">
+                        <h3>VisualSense-QA</h3>
+                        <p>Developed an end-to-end Visual Question Answering (VQA) web application utilizing advanced AI techniques, including the Vision-and-Language Transformer (ViLT) for image understanding and natural language processing. Addressed challenges in large language models (LLMs) related to interpretability.</p>
+                        <button class="view-btn1" onclick="window.open('https://github.com/Vethan123/VisualSense-QA', '_blank')">View on GitHub</button>
+                        <button class="view-btn1" onclick="window.open('https://huggingface.co/spaces/vvroy/VisualSense-QA', '_blank')">Deployed Link</button>
+                    </div>
                 </div>
             </div>
-            <div class="rightSection">
-                <img src="ss.png" alt="">
-            </div>
+            </section>
+
+        <hr>
+        <section class="site-section section-contact" id="contact">
+            
+        <div class="container">
+            <h1 id = "contact">FEEL FREE TO CONNECT😊</h1><br><br><br>
+        <div class="left-side">
+            <button class="btns" onclick="window.open('https://www.linkedin.com/in/vethan-yadam-a92a9a251/', '_blank')">LinkedIn</button><br>
+            <button class="btns" onclick="window.open('mailto:yadamvethan1@gmail.com')">G-Mail</button><br>
+            <button class="btns" onclick="window.open('http://discordapp.com/users/1105388041700397126', '_blank')">Discord</button>
+            <button class="btns" onclick="window.open('https://github.com/Vethan123', '_blank')">View Github</button>
+            <button class="btns" onclick="window.open('https://drive.google.com/file/d/1j42vyKFXqAQvQLSr0re2_sa6i8idUUWa/view?usp=drive_link', '_blank')">View Resume</button>
+        </div>
+    </div>
         </section>
-    </main>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-        strings: ['<b>Web Devoloper</b>', '<b/>&amp; Data Engineer'],
-        typeSpeed: 150,
-        });
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src = "canva.js"></script>
+    </footer><!-- /#footer -->
+    <!-- End Footer --> 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery core js | Do not Delete -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap core js | Do not Delete -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap progressbar JS -->
+    <script src="assets/js/bootstrap-progressbar.min.js"></script>
+
+    <!-- Count To JS -->
+    <script src="assets/js/jquery.countTo.min.js"></script>
+
+    <!-- Easing JS -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!-- Shuffle JS -->
+    <script src="assets/js/jquery.shuffle.min.js"></script>
+
+    <!-- Slick Carousel JS -->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- Touchswipe JS -->
+    <script src="assets/js/touchswipe.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
