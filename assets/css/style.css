@@ -263,10 +263,6 @@ html, body {
 
 /* HEADER
 ================================================== */
-.site-header {
-  height: 60px;
-}
-
 .site-logo {
   display: inline-block;
   position: relative;
@@ -372,7 +368,7 @@ html, body {
   }
   .site-navigation .navbar-toggle {
     margin: 0 5px 0 0;
-    height: 60px;
+    height: 10px;
     line-height: 60px;
     border: 0;
   }
@@ -437,6 +433,7 @@ html, body {
   z-index: 0;
 }
 
+/* Original Styles */
 .hero-content {
   color: #ffffff;
   display: table-cell;
@@ -466,7 +463,6 @@ html, body {
 }
 
 .hero-content .hero-job span {
-  padding-bottom: 5px;
   border-bottom: 1px solid #ffffff;
 }
 
@@ -475,20 +471,63 @@ html, body {
   max-width: 700px;
 }
 
-.hero-arrow {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 30px;
-  width: 20px;
-  margin: 0 auto;
-  text-align: center;
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+  
+  .hero-content .hero-job {
+    font-size: 16px;
+  }
+
+  .hero-content .hero-job-desc {
+    font-size: 13px;
+    max-width: 650px;
+  }
 }
 
-.hero-arrow a {
-  font-size: 28px;
-  color: #ffffff;
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    padding: 0 10px;
+    margin: 20px auto 0;
+  }
+
+  .hero-content .hero-job {
+    font-size: 15px;
+  }
+
+  .hero-content .hero-job-desc {
+    font-size: 12px;
+    max-width: 600px;
+  }
 }
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    padding: 0 8px;
+    margin: 15px auto 0;
+  }
+
+  .hero-content .hero-job {
+    font-size: 14px;
+  }
+
+  .hero-content .hero-job-desc {
+    font-size: 11px;
+    max-width: 500px;
+  }
+}
+
+
 
 @-webkit-keyframes home-arrow-down {
   from {
@@ -843,6 +882,7 @@ html, body {
 }
 
 /* Section: Skills */
+
 .section-skills {
   background-color: #f6f6f6;
 }
@@ -854,7 +894,7 @@ html, body {
   font-size: 18px;
   color: #000;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
 }
 
 .section-skills h2:before {
@@ -862,7 +902,6 @@ html, body {
   position: absolute;
   bottom: 0;
   display: block;
-  width: 40px;
   height: 1px;
   background-color: #000;
 }
@@ -929,22 +968,68 @@ html, body {
   right: -7px;
   color: #000;
   z-index: 3;
+  text-align: center;
+  font-size: 12px;
 }
 
 .progressbar-back-text {
   display: none;
 }
 
+@media only screen and (max-width: 1024px) {
+  .section-skills h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .progress-bar span {
+    width: 35px !important;
+    top: -25px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
-  /* Section: Skills */
+  .section-skills h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
   .section-skills .col-sm-6 + .col-sm-6 {
     margin-top: 40px;
   }
-  .section-skills h2 {
-    margin-bottom: 20px;
-    font-size: 18px;
+
+  .progress-bar span {
+    width: 30px !important;
+    top: -25px;
+    font-size: 10px;
+  }
+
+  .progress-group + .progress-group {
+    margin-top: 10px;
+  }
+
+  .progress-bar {
+    height: 8px;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  
+  .section-skills h2 {
+    font-size: 18px;
+  }
+
+  .progress-bar span {
+    width: 25px !important;
+    top: -20px; 
+    font-size: 8px; 
+  }
+
+  .progress-bar {
+    height: 6px; 
+  }
+}
+
 
 
 
@@ -982,23 +1067,63 @@ html, body {
 }
 
 
-
-
-#element1{
-  padding-top : 30px;
+#element1 {
+  padding-top: 30px;
   text-align: justify;
-  display: block;     
-  width: 100%;        
+  display: block;
+  width: 100%;
   margin-bottom: 10px;
-  font-size: 25px;    
+  font-size: 25px;
   color: #333;
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-#h22{
-  font-size: 45px;
-  font-family: "poppins", sans-serif;
+@media only screen and (max-width: 1024px) {
+  #element1 {
+    font-size: 22px;
+    padding-top: 25px;
+  }
 }
+
+@media only screen and (max-width: 767px) {
+  #element1 {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #element1 {
+    font-size: 16px;
+    padding-top: 15px;
+  }
+}
+
+/* #h22 */
+#h22 {
+  font-size: 45px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Responsive styles for #h22 */
+@media only screen and (max-width: 1024px) {
+  #h22 {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #h22 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #h22 {
+    font-size: 25px;
+  }
+}
+
 
 #progress-bar{
   width : 100%;
@@ -1196,3 +1321,48 @@ hr {
   border-radius: 2px;   
 }
 
+
+/* Responsive Enhancements */
+
+/* Small devices (portrait tablets and large phones, less than 768px) */
+@media (max-width: 767px) {
+    /* Adjust hero section for smaller screens */
+    .hero-content h1 {
+        font-size: 24px;
+    }
+    .hero-content p {
+        font-size: 14px;
+    }
+    /* Adjust sections' padding and layout */
+    .site-section {
+        padding: 40px 0;
+    }
+    .main-service h3 {
+        font-size: 14px;
+    }
+    .main-service p {
+        font-size: 12px;
+    }
+    /* Adjust project cards */
+    .project-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .site-section {
+        padding: 60px 0;
+    }
+    .project-card {
+        width: 48%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .project-card {
+        width: 32%;
+    }
+}
