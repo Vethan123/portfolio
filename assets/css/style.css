@@ -1010,7 +1010,7 @@ html, body {
 }
 
 .progress-group{
-  width: 90vw;
+  width: 100%;
 }
 .progress-group p {
   margin: 0;
