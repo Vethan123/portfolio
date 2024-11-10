@@ -859,7 +859,7 @@ html, body {
     padding-left: 7em;
   }
   .main-service.text-left p, .main-service.text-right p{
-    width :280px;
+    width : 70vw;
     text-align: justify;
   }
   .wraps{
@@ -908,7 +908,7 @@ html, body {
   }
 
   .main-service.text-left p, .main-service.text-right p{
-    width :200px;
+    width :70vw;
     text-align: justify;
   }
   .section-hello .rectangle{
