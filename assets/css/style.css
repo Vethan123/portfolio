@@ -1255,28 +1255,6 @@ font-family: "poppins",sans-serif;
 font-size: 50px;
 }
 
-/* .btns {
-  border: 2px solid rgba(255, 255, 255, 0);
-  border-color: black;
-  border-radius: 15px;
-  color: black;
-  background: rgba(30, 33, 103, 0);
-  padding: 10px;
-  font-size: 15px;
-  cursor: pointer;
-  margin: 10px 0; 
-  width: 30%;
-  text-align: center;
-  transition: transform 0.2s, background-color 0.2s;
-}
-
-.btns:hover {
-  color: rgb(251, 7, 7);
-  border-color: aqua;
-  transform: scale(1.1);
-} */
-
-
 .imgsss{
   display: block;
     width: 290px;
@@ -1307,11 +1285,32 @@ font-size: 50px;
   transition: transform 0.2s, background-color 0.2s;
 }
 
-.btns:hover {
+.btns:hover,
+.btns:active {
   transform: scale(1.05);
   background-color: black;
   color: white;
 }
+
+@media (max-width: 768px) {
+  .btns {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .btns {
+    width: 70%;
+    font-size: 14px;
+  }
+
+  .btns:active {
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
+  }
+}
+
 
 hr {
   border: 0;
@@ -1319,50 +1318,4 @@ hr {
   background-color: rgba(0, 0, 0, 0.1); 
   margin: 20px 0;        
   border-radius: 2px;   
-}
-
-
-/* Responsive Enhancements */
-
-/* Small devices (portrait tablets and large phones, less than 768px) */
-@media (max-width: 767px) {
-    /* Adjust hero section for smaller screens */
-    .hero-content h1 {
-        font-size: 24px;
-    }
-    .hero-content p {
-        font-size: 14px;
-    }
-    /* Adjust sections' padding and layout */
-    .site-section {
-        padding: 40px 0;
-    }
-    .main-service h3 {
-        font-size: 14px;
-    }
-    .main-service p {
-        font-size: 12px;
-    }
-    /* Adjust project cards */
-    .project-card {
-        width: 100%;
-        margin: 10px 0;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-    .site-section {
-        padding: 60px 0;
-    }
-    .project-card {
-        width: 48%;
-    }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px) {
-    .project-card {
-        width: 32%;
-    }
 }
