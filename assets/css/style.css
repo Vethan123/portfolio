@@ -1035,6 +1035,8 @@ html, body {
   position: relative;
   background-color: #196fc2;
   height: 10px;
+  width: 100%;
+  align-items: left;
 }
 
 .progress-bar:before {
