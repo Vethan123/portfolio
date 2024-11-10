@@ -23,6 +23,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+  
 }
 
 /* 
@@ -806,10 +807,15 @@ html, body {
   .main-service.text-left {
     padding-left: 75px;
   }
+
+  
 }
 
 @media only screen and (max-width: 767px) {
   /* Section: Hello */
+  #intro{
+    padding-top: 1em;
+  }
   .section-hello .row {
     margin-top: 30px;
   }
@@ -822,7 +828,96 @@ html, body {
   .section-hello .main-service p {
     margin-top: 15px;
   }
+
+  .section-hello h2{
+    padding-top: 20px;
+  }
 }
+
+@media only screen and (max-width: 426px) {
+  /* Section: Hello */
+  .img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    border: 5px solid #555;
+  }
+  .main-service {
+    padding: 15px 0;
+  }
+  
+  .main-service h3 {
+    font-size: 12px;
+  }
+  .main-service.text-right {
+    text-align: left;
+    padding-left: 7em;
+  }
+  .main-service.text-left {
+    text-align: left;
+    padding-left: 7em;
+  }
+  .main-service.text-left p, .main-service.text-right p{
+    width :280px;
+    text-align: justify;
+  }
+  .wraps{
+    padding-bottom: 3em;
+  }
+  .wrap{
+    padding-top: 5em;
+  }
+  .section-hello .rectangle{
+    left : 5px;
+    right : auto;
+  }
+  .section-hello h2{
+    padding-top: 10px;
+  }
+  .big-rectangle{
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+}
+@media only screen and (max-width: 376px) {
+  /* Section: Hello */
+  .img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    border: 5px solid #555;
+  }
+  .main-service {
+    padding: 15px 0;
+  }
+  .main-service h3 {
+    font-size: 13px;
+  }
+  .main-service.text-right {
+    text-align: left;
+    padding-left: 5em;
+  }
+  .main-service.text-left {
+    text-align: left;
+    padding-left: 5em;
+  }
+  .section-hello h2{
+    padding-top: 10px;
+  }
+
+  .main-service.text-left p, .main-service.text-right p{
+    width :200px;
+    text-align: justify;
+  }
+  .section-hello .rectangle{
+    left : 5px;
+    right : auto;
+  }
+}
+
+
 
 /* Section: About */
 
@@ -872,12 +967,17 @@ html, body {
 }
 
 @media only screen and (max-width: 479px) {
-  .section-about .col-xs-6 {
-    width: 100%;
-    min-height: 100%;
+  .section-about .row {
+    margin-top: 10px;
   }
-  .section-about .col-xs-6:nth-child(n+2) .feature-about {
-    margin-top: 20px;
+  .section-about .col-xs-6:nth-child(n+3) .feature-about {
+    margin-top: 10px;
+  }
+  .section-about .feature-about h3 {
+    margin-top: 15px;
+  }
+  .section-about .feature-about p {
+    margin-top: 10px;
   }
 }
 
@@ -921,7 +1021,7 @@ html, body {
 
 .progress {
   position: relative;
-  margin: 10px 0 0;
+  margin: 8px 0 0;
   background-color: #666;
   border-radius: 0;
   height: 10px;
@@ -1218,11 +1318,13 @@ html, body {
 .view-btn {
   padding: 10px 20px;
   font-size: 16px;
+  border-color: #000;
 }
 
 .view-btn1 {
   padding: 12px;
   font-size: 16px;
+  border-color: #000;
 }
 
 .view-btn:hover, .view-btn1:hover {
