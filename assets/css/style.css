@@ -23,7 +23,6 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-  
 }
 
 /* 
@@ -1010,6 +1009,9 @@ html, body {
   margin: 10px 0 0;
 }
 
+.progress-group{
+  width: 90vw;
+}
 .progress-group p {
   margin: 0;
   text-transform: uppercase;
@@ -1051,7 +1053,7 @@ html, body {
 .progress-bar:after {
   content: '';
   position: absolute;
-  right: -8px;
+  right: 8px;
   top: -10px;
   width: 0;
   height: 0;
@@ -1065,10 +1067,10 @@ html, body {
   width: 40px !important;
   position: absolute;
   top: -30px;
-  right: -7px;
+  right: 7px;
   color: #000;
   z-index: 3;
-  text-align: center;
+  text-align: right;
   font-size: 12px;
 }
 
@@ -1084,7 +1086,7 @@ html, body {
 
   .progress-bar span {
     width: 35px !important;
-    top: -25px;
+    top: 25px;
   }
 }
 
